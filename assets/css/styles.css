@@ -192,12 +192,18 @@ img{
   cursor: pointer;
 }
 /*=== Show menu ===*/
-
+.show{
+  left: 0;
+}
 
 /*Active menu*/
 
 
 /*===== HOME =====*/
+.home__container{
+  height: calc(100vh - var(--header-height));
+  align-items: center;
+}
 
 
 /*BUTTONS*/
