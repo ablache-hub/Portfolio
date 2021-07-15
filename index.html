@@ -1,50 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== BOX ICONS ===== -->
-        
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive personal portfolio | Harris</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            
+    <title>Responsive personal portfolio | Harris</title>
+</head>
 
-            <!--===== ABOUT =====-->
-            
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
 
-            <!--===== SKILLS =====-->
-            
+            <div>
+                <a href="#" class="nav__logo">Blache</a>
+            </div>
 
-            <!--===== EDUCATION =====-->
-            
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
 
-            <!--===== SERVICES =====-->
-            
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#works" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contactez-moi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-            <!--===== PROJECT IN MIND =====-->
-            
+    <main class="l-main">
 
-            <!--===== WORKS =====-->
-            
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="assets/img/profil.png" alt="">
+                    </div>
 
-            <!--===== CONTACT =====-->
-            
-        </main>
+                    <h1 class="home__title">Alexandre Blache</h1>
+                    <span class="home__profession">Développeur Java/Fullstack</span>
 
-        <!--===== FOOTER =====-->
-        
-        <!--===== MAIN JS =====-->
-        <script src=""></script>
-    </body>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/alexandre-blache-b476421bb/" class="home__social-link"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/ablache-hub" class="home__social-link"><i class="bx bxl-github"></i></a>
+                    </div>
+
+                    <a download="" href="assets/CV_blache_alexandre.pdf" class="button home__button">Télécharger CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <span class="section-subtitle">Introduction</span>
+            <h2 class="section-title">Qui suis-je?</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ut
+                        quisquam earum sapiente magnam numquam beatae id, rem impedit consectetur laudantium. Nam omnis
+                        architecto distinctio quisquam obcaecati ut exercitationem dolor soluta esse pariatur minus,
+                        doloribus nobis? Eligendi natus laudantium quaerat quia officiis assumenda dignissimos. Ab
+                        facere fuga temporibus cumque quia.</p>
+                    <img src="assets/img/about.jfif" alt="" class="about__img">
+                </div>
+
+                <div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Information</h3>
+
+                        <div class="about__information-data">
+                            <i class="bx bx-user about__information-icon"></i>
+                            <span>Alexandre Blache</span>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class="bx bx-phone about__information-icon"></i>
+                            <span>07 70 25 43 59</span>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class="bx bx-envelope about__information-icon"></i>
+                            <span>alexandreblache.pro@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="about__information">
+                        <h3 class="about__information-title">Experience</h3>
+
+                        <div class="about__information-data">
+                            <i class="bx bx-medal about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">5 ans</span>
+                                <span class="about__information-subtitle-small">Experience</span>
+                            </div>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class="bx bx-briefcase about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">50+ Projects</span>
+                                <span class="about__information-subtitle-small">Completed</span>
+                            </div>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class="bx bx-support about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">Support</span>
+                                <span class="about__information-subtitle-small">Online 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+<section class="skills section" id="skills">
+    <span class="section-subtitle">Expertise</span>
+    <h2 class="section-title">Mes domaines de compétence</h2>
+
+    <div class="skills__container bd-grid">
+        <div class="skills__content">
+            <h3 class="skills__subtitle">Frontend</h3>
+
+            <div class="skills__data">
+                <span class="skills__name">HTML/CSS</span>
+                <span class="skills__number">80%</span>
+                <span class="skills__bar skills__html"></span>
+            </div>
+
+            <div class="skills__data">
+                <span class="skills__name">JavaScript</span>
+                <span class="skills__number">70%</span>
+                <span class="skills__bar skills__js"></span>
+            </div>
+
+            <div class="skills__data">
+                <span class="skills__name">React</span>
+                <span class="skills__number">50%</span>
+                <span class="skills__bar skills__react"></span>
+            </div>
+
+        </div>
+
+        <div class="skills__content">
+            <h3 class="skills__subtitle">Backend</h3>
+
+            <div class="skills__data">
+                <span class="skills__name">Java</span>
+                <span class="skills__number">80%</span>
+                <span class="skills__bar skills__java"></span>
+            </div>
+
+            <div class="skills__data">
+                <span class="skills__name">Spring</span>
+                <span class="skills__number">70%</span>
+                <span class="skills__bar skills__spring"></span>
+            </div>
+
+            <div class="skills__data">
+                <span class="skills__name">MySQL</span>
+                <span class="skills__number">50%</span>
+                <span class="skills__bar skills__mysql"></span>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+        <!--===== FORMATION =====-->
+<section class="education section">
+    <span class="section-subtitle">Qualification</span>
+    <h2 class="section-title">Ma Formation</h2>
+
+    <div class="education__container bd-grid">
+        <div class="education__content">
+            <div>
+                <h3 class="education__year">2001-2002</h3>
+                <span class="education__university">Louise Michel</span>
+            </div>
+
+            <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+            </div>
+
+            <div>
+                <h3 class="education__race">BTS</h3>
+                <span class="education__specialty">Info. de gestion</span>
+            </div>
+        </div>
+
+        <div class="education__content">
+            <div>
+                <h3 class="education__year">2001-2002</h3>
+                <span class="education__university">Louise Michel</span>
+            </div>
+
+            <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+            </div>
+
+            <div>
+                <h3 class="education__race">BTS</h3>
+                <span class="education__specialty">Info. de gestion</span>
+            </div>
+        </div>
+
+        <div class="education__content">
+            <div>
+                <h3 class="education__year">2001-2002</h3>
+                <span class="education__university">Louise Michel</span>
+            </div>
+
+            <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+            </div>
+
+            <div>
+                <h3 class="education__race">BTS</h3>
+                <span class="education__specialty">Info. de gestion</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!--===== SERVICES =====-->
+<section class="services section" id="services">
+    <span class="section-subtitle">Ce que je propose</span>
+    <h2 class="section-title">Mes Services</h2>
+
+    <div class="services__container bd-grid">
+        <div class="services__content">
+            <i class="bx bx-code services__icon"></i>
+            <h3 class="services__title">Web Design</h3>
+            <p class="services__description">Les services que j'offre blabla</p>
+        </div>
+
+        <div class="services__content">
+            <i class="bx bx-pen services__icon"></i>
+            <h3 class="services__title">Graphic Design</h3>
+            <p class="services__description">Les services que j'offre blabla</p>
+        </div>
+
+        <div class="services__content">
+            <i class="bx bx-brush services__icon"></i>
+            <h3 class="services__title">UI/UX</h3>
+            <p class="services__description">Les services que j'offre blabla</p>
+        </div>
+
+        <div class="services__content">
+            <i class="bx bx-server services__icon"></i>
+            <h3 class="services__title">Dev. Backend</h3>
+            <p class="services__description">Les services que j'offre blabla</p>
+        </div>
+
+        <div class="services__content">
+            <i class="bx bx-pencil services__icon"></i>
+            <h3 class="services__title">Ecriture</h3>
+            <p class="services__description">Les services que j'offre blabla</p>
+        </div>
+
+        <div class="services__content">
+            <i class="bx bx-mobile services__icon"></i>
+            <h3 class="services__title">Interface Mobile</h3>
+            <p class="services__description">Les services que j'offre blabla</p>
+        </div>
+    </div>
+</section>
+
+        <!--===== PROJECT IN MIND =====-->
+<section class="project section">
+    <div class="project__container bd-grid">
+        <div class="project__data">
+            <h2 class="section-title project__title">Avez-vous un projet en tête?</h2>
+            <p class="project__description">Si vous avez un projet blabla</p>
+            <a href="#contact" class="button button__light">Contactez-moi</a>
+        </div>
+
+        <img src="assets/img/projectmind.png" alt="" class="project__img">
+    </div>
+</section>
+
+        <!--===== WORKS =====-->
+<section class="works section" id="works">
+    <span class="section-subtitle">Mon Portfolio</span>
+    <h2 class="section-title">Projets Recents</h2>
+
+    <div class="works__container bd-grid">
+        <div class="works__img">
+            <img src="assets/img/work1.jpg" alt="">
+
+            <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Work 1</span>
+            </div>
+        </div>
+
+        <div class="works__img">
+            <img src="assets/img/work2.jpg" alt="">
+
+            <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Work 2</span>
+            </div>
+        </div>
+
+        <div class="works__img">
+            <img src="assets/img/work3.jpg" alt="">
+
+            <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Work 3</span>
+            </div>
+        </div>
+
+        <div class="works__img">
+            <img src="assets/img/work4.jpg" alt="">
+
+            <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Work 4</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!--===== CONTACT =====-->
+<section class="contact section" id="contact">
+    <span class="section-subtitle">Contact</span>
+    <h2 class="section-title">Comment me joindre?</h2>
+
+    <div class="contact__container bd-grid">
+        <form action="https://formsubmit.co/alexandreblache.pro@gmail.com" class="contact__form" method="POST"">
+            <div class="contact__inputs">
+                <input name="nom" type="text" placeholder="Nom" class="contact__input" required>
+                <input name="email" type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Adresse email invalide" placeholder="Email" class="contact__input" required>
+            </div>
+
+            <input name="contact" type="text" placeholder="Sujet" class="contact__input">
+
+            <textarea name="message" id="" cols="0" rows="5" placeholder="Votre Message" class="contact__input"></textarea>
+
+            <input type="hidden" name="_next" value="https://google.com">
+            <input type="submit" value="Envoyer" class="button contact__button">
+        </form>
+
+        <!-- <form action="https://formsubmit.co/alexandreblache.pro@gmail.com" method="POST">
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <button type="submit">Send</button>
+       </form> -->
+
+        <div>
+            <div class="contact__info">
+                <h3 class="contact__subtitle">Numéro</h3>
+                <span class="contact__text">07 70 25 43 59</span>
+            </div>
+
+            <div class="contact__info">
+                <h3 class="contact__subtitle">Email</h3>
+                <span class="contact__text">alexandreblache.pro@gmail.com</span>
+            </div>
+
+            <div class="contact__info">
+                <h3 class="contact__subtitle">Localisation</h3>
+                <span class="contact__text">Nantes - France</span>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!--===== FOOTER =====-->
+
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
