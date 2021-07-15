@@ -672,7 +672,7 @@ img{
 
   .project__img{
     width: 220px;
-    align-self: flex-end;
+    align-self: center;
   }
 
   .contact__input{
