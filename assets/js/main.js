@@ -14,7 +14,7 @@ closeMenu.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
 
-/*===== ACTIVE AND REMOVE MENU =====*/
+/*===== FERME MENU AU CLICK =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -23,4 +23,3 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
