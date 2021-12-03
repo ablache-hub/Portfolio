@@ -610,7 +610,41 @@ img{
 }
 
 /* ===== FOOTER =====*/
+.nav__toggle__popup{
+  color: black;
+ }
+ 
+ .nav_toggle_close{
+   text-align: end;
+   margin-right: 10px;
+   color:#c25003;
+   font-size: 2em;
+ }
 
+ .popup-wrapper {
+   display: none;
+   text-align: center;
+   width: 50vw;
+   height: 80vh;
+   margin: 10vh 0 10vh 12vw;
+   top: 0;
+   position: fixed;
+   border-radius: 2%;
+   background-color: rgba(22, 22, 22, 0.438); /* complimenting your modal colors */
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+ }
+ 
+ .popup-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .toggleShow{
+  display: block;
+   transition: 1s;
+ }
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
@@ -721,4 +755,41 @@ img{
   .works__container{
     grid-template-columns: repeat(3,1fr);
   }
+
+  .nav__toggle__popup{
+   color: black;
+  }
+  
+  .nav_toggle_close{
+    text-align: end;
+    margin-right: 10px;
+    color:#c25003;
+    font-size: 2em;
+  }
+
+  .popup-wrapper {
+    display: none;
+    text-align: center;
+    width: 50vw;
+    height: 80vh;
+    margin: 10vh 0 10vh 12vw;
+    top: 0;
+    position: fixed;
+    border-radius: 2%;
+    background-color: rgba(22, 22, 22, 0.438); /* complimenting your modal colors */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .toggleShow{
+   display: block;
+    transition: 1s;
+  }
+
 }
