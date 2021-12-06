@@ -627,12 +627,13 @@ img{
    display: none;
    text-align: center;
    height: 90vh;
+   width: 95vw;
    margin: 8vh 0 2vh 0;
    top: 0;
    position: fixed;
    border-radius: 2%;
    overflow: auto;
-   background-color: rgba(226, 226, 226, 0.75); /* complimenting your modal colors */
+   background-color: rgba(226, 226, 226, 0.75);
    backdrop-filter: blur(15px);
    -webkit-backdrop-filter: blur(15px);
    z-index: 1;
@@ -818,7 +819,7 @@ margin: auto;
   .popup-wrapper {
     width: 60vw;
     height: 80vh;
-    margin: 10vh 0 0vh 4vh;
+    margin: 10vh 10 0vh 0vh;
   }
   
 
