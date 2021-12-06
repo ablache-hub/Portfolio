@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9cb4f74-6e97-435f-9784-f9f27bdcbda6" name="Default Changelist" comment="branch main" />
+    <list default="true" id="d9cb4f74-6e97-435f-9784-f9f27bdcbda6" name="Default Changelist" comment="branch main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +34,8 @@
       <updated>1625823723127</updated>
       <workItem from="1625823725718" duration="58000" />
       <workItem from="1625823806561" duration="170000" />
+      <workItem from="1626876130287" duration="29000" />
+      <workItem from="1626876183430" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="branch main">
       <created>1625823951433</created>
@@ -56,6 +60,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="branch main" />
