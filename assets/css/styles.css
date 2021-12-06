@@ -553,6 +553,7 @@ img{
   padding: .25rem;
   border-radius: .25rem;
   margin-bottom: var(--mb-2);
+  cursor: pointer;
 }
 
 .works__title{
@@ -619,32 +620,84 @@ img{
    margin-right: 10px;
    color:#c25003;
    font-size: 2em;
+   cursor: pointer;
  }
 
  .popup-wrapper {
    display: none;
    text-align: center;
-   width: 50vw;
-   height: 80vh;
-   margin: 10vh 0 10vh 12vw;
+   height: 90vh;
+   margin: 8vh 0 2vh 0;
    top: 0;
    position: fixed;
    border-radius: 2%;
-   background-color: rgba(22, 22, 22, 0.438); /* complimenting your modal colors */
-   backdrop-filter: blur(5px);
-   -webkit-backdrop-filter: blur(5px);
+   overflow: auto;
+   background-color: rgba(226, 226, 226, 0.75); /* complimenting your modal colors */
+   backdrop-filter: blur(15px);
+   -webkit-backdrop-filter: blur(15px);
+   z-index: 1;
  }
- 
+
+ #popup-close-1 {
+   margin-bottom: -51px;
+   position: relative;
+ }
+
+.popup-header-title {
+  margin-top: 10px;
+}
  .popup-content {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   font-size: 0.9rem;
+ }
+
+ .popup-content-links, .popup-content-techno{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+ .techno-icon {
+   width: 25px;
+ }
+
+ .html-icons{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   height: 25px;
+ }
+
+ .popup-content-techno-list
+ {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
  }
 
  .toggleShow{
   display: block;
    transition: 1s;
  }
+
+.popup_img{
+margin-top: 10px;
+border-radius: 5%;
+max-width: 500px;
+margin: auto;
+}
+
+.popup-techno {
+  display: flex;
+  justify-content: space-around;
+}
+.popup-techno-column{
+  display: flex;
+  flex-direction: column;
+}
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
@@ -717,6 +770,12 @@ img{
   .contact__info{
     padding-left: 3rem;
   }
+
+  .popup-wrapper {
+    width: 80vw;
+    height: 80vh;
+    margin: 12vh 0 0 0;
+  }
 }
 
 @media  screen and (min-width: 1024px) {
@@ -756,40 +815,11 @@ img{
     grid-template-columns: repeat(3,1fr);
   }
 
-  .nav__toggle__popup{
-   color: black;
-  }
-  
-  .nav_toggle_close{
-    text-align: end;
-    margin-right: 10px;
-    color:#c25003;
-    font-size: 2em;
-  }
-
   .popup-wrapper {
-    display: none;
-    text-align: center;
-    width: 50vw;
+    width: 60vw;
     height: 80vh;
-    margin: 10vh 0 10vh 12vw;
-    top: 0;
-    position: fixed;
-    border-radius: 2%;
-    background-color: rgba(22, 22, 22, 0.438); /* complimenting your modal colors */
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    margin: 10vh 0 0vh 4vh;
   }
   
-  .popup-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .toggleShow{
-   display: block;
-    transition: 1s;
-  }
 
 }

@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- ===== BOX ICONS ===== -->
+    <script src="https://use.fontawesome.com/23ffcc7965.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Responsive personal portfolio | Harris</title>
+    <title>Responsive personal portfolio | Blache</title>
 </head>
 
 <body>
@@ -311,11 +312,104 @@
             <h2 class="section-title">Projets Recents</h2>
 
             <div class="works__container bd-grid">
+                <div class="popup-wrapper" id="popup-wrapper-1">
+                    <div class="nav_toggle_close" id="popup-close-1" onclick="displayPopup(this.id)">
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <div class="popup-content">
+                        <div class="popup-header">
+                            <h1 class="popup-header-title">My BLOG</h1>
+                            <img src="./assets/img/blog.jpg" alt="project_img" class="popup_img">
+                            <h5>
+                                Plateforme de rédaction d'un blog avec système d'authentification.
+                                Affichage, redaction, modification, suppression d'articles liés à chaque compte
+                                utilisateur.
+                            </h5>
+                        </div>
+                        <ul class="popup-content-links">
+                            <li>Liens</li>
+                            <li>
+                                <i class="bx bxl-github"></i>
+                                <a href="" class="">Back</a>
+                                <span> / </span>
+                                <a href="" class="">Front</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"></i>
+                                <span>Live</span>
+                            </li>
+                        </ul>
+                        <h4>Stack technique</h2>
+                            <ul class="popup-content-techno">
+                                <li class="popup-content-techno-list">
+                                    <div class="html-icons">
+                                        <img src="./assets/img/html.png" alt="" class="techno-icon">
+                                        <img src="./assets/img/css.png" alt="" class="techno-icon">
+                                    </div>
+                                    <span>HTML/CSS</span>
+                                </li>
+                                <li class="popup-content-techno-list">
+                                    <img src="https://symbols.getvecta.com/stencil_96/69_spring-framework-icon.d563816ce9.svg"
+                                        alt="" class="techno-icon">
+                                    <span>Spring</span>
+                                </li>
+                                <li class="popup-content-techno-list">
+                                    <img src="https://iconape.com/wp-content/png_logo_vector/react-2.png" alt=""
+                                        class="techno-icon">
+                                    <span>React</span>
+                                </li>
+                                <li class="popup-content-techno-list">
+                                    <img src="./assets/img/my-sql.png" alt="" class="techno-icon">
+                                    <span>MySQL</span>
+                                </li>
+
+                            </ul>
+
+                            <h4>Implémentations</h2>
+                                <div class="popup-techno">
+                                    <div class="popup-techno-column">
+                                        <ul>
+                                            <li>- Architecture MVC</li>
+                                            <li>- API RESTfull</li>
+                                            <li>- Security avec JWT </li>
+                                            <li>- BDD SQL Distante </li>
+                                            <li>- Schema rel. SQL </li>
+                                            <li>- Stockage data </li>
+                                        </ul>
+                                    </div>
+                                    <div class="popup-techno-column">
+                                        <ul>
+                                            <li>- Composants/Router </li>
+                                            <li>- Hooks/Context </li>
+                                            <li>- CRUD vers API </li>
+                                            <li>- Cryptage Token </li>
+                                            <li>- Deploiement Heroku </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <div class="popup-wrapper" id="popup-wrapper-2">
+                    <div class="nav_toggle_close" id="popup-close-2" onclick="displayPopup(this.id)">
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <div class="popup-content">Portfolio</div>
+                </div>
+                <div class="popup-wrapper" id="popup-wrapper-3">
+                    <div class="nav_toggle_close" id="popup-close-3" onclick="displayPopup(this.id)">
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <div class="popup-content">test</div>
+                </div>
+
                 <div class="works__img">
                     <img src="assets/img/work1.jpg" alt="">
 
+
                     <div class="works__data">
-                        <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__link" id="works-link-1" onclick="displayPopup(this.id)">
+                            <i class="bx bx-link-alt"></i>
+                        </span>
                         <span class="works__title">Heap</span>
                     </div>
                 </div>
@@ -324,18 +418,26 @@
                     <img src="assets/img/work2.jpg" alt="">
 
                     <div class="works__data">
-                        <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__link" id="works-link-2" onclick="displayPopup(this.id)">
+                            <i class="bx bx-link-alt"></i>
+                        </span>
                         <span class="works__title">Portfolio</span>
                     </div>
+
+
                 </div>
 
                 <div class="works__img">
-                    <img src="assets/img/work3.jpg" alt="">
+                    <img src="assets/img/work3.jpg" alt="" id="works-container-3" onclick="displayPopup(this.id)">
 
                     <div class="works__data">
-                        <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__link" id="works-link-3" onclick="displayPopup(this.id)">
+                            <i class="bx bx-link-alt"></i>
+                        </span>
                         <span class="works__title">Pokédex</span>
                     </div>
+
+
                 </div>
 
                 <!-- <div class="works__img">
@@ -394,24 +496,17 @@
                 </div>
             </div>
 
-            
+
         </section>
     </main>
 
     <!--===== FOOTER =====-->
-        <div class="nav__toggle__popup" id="popup-toggle">
-            <i class="bx bx-menu"></i>
-        </div>
+    <div class="nav__toggle__popup" id="popup-toggle-1" onclick="displayPopup(this.id)">
+        <i class="bx bx-menu"></i>
+    </div>
 
 
-        <div class="popup-wrapper" id="popup-wrapper">
-            <div class="nav_toggle_close" id="popup-close">
-                <i class="bx bx-x"></i>
-            </div>
-            <div class="popup-content">test</div>
 
-    
-        </div>
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
 </body>
