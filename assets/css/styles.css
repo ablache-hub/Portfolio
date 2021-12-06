@@ -647,6 +647,11 @@ img{
 .popup-header-title {
   margin-top: 10px;
 }
+
+.popup-header-subtitle{
+ padding: 0 15px 0 15px;
+}
+
  .popup-content {
    display: flex;
    flex-direction: column;
