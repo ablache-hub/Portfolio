@@ -629,6 +629,7 @@ img{
    height: 90vh;
    width: 95vw;
    margin: 8vh 0 2vh 0;
+   padding-bottom: 25px;
    top: 0;
    position: fixed;
    border-radius: 2%;
@@ -639,7 +640,7 @@ img{
    z-index: 1;
  }
 
- #popup-close-1 {
+ .popup_toggle_close {
    margin-bottom: -51px;
    position: relative;
  }
@@ -650,6 +651,10 @@ img{
 
 .popup-header-subtitle{
  padding: 0 15px 0 15px;
+}
+
+.popup-header-subsubtitle {
+  margin-bottom: 5px;
 }
 
  .popup-content {
@@ -693,6 +698,7 @@ img{
 margin-top: 10px;
 border-radius: 5%;
 max-width: 500px;
+max-height: 200px;
 margin: auto;
 }
 
@@ -822,9 +828,9 @@ margin: auto;
   }
 
   .popup-wrapper {
-    width: 60vw;
-    height: 80vh;
-    margin: 10vh 10 0vh 0vh;
+    width: 65vw;
+    height: 90vh;
+    margin: 5vh 0 0 0;
   }
   
 
