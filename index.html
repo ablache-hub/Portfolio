@@ -36,8 +36,8 @@
                     <li class="nav__item"><a href="#home" class="nav__link">Accueil</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#works" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contactez-moi</a></li>
                 </ul>
             </div>
@@ -64,7 +64,11 @@
                                 class="bx bxl-github"></i></a>
                     </div>
 
-                    <a download="" href="assets/CV_blache_alexandre.pdf" class="button home__button">Télécharger CV</a>
+                    <div class="home__buttons">
+                        <a download="" href="assets/CV_blache_alexandre.pdf" class="button home__button">Télécharger
+                            CV</a>
+                        <a download="" href="#contact" class="button home__button">Me Contacter</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -76,12 +80,12 @@
 
             <div class="about__container bd-grid">
                 <div class="about__data">
-                    <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ut
-                        quisquam earum sapiente magnam numquam beatae id, rem impedit consectetur laudantium. Nam omnis
-                        architecto distinctio quisquam obcaecati ut exercitationem dolor soluta esse pariatur minus,
-                        doloribus nobis? Eligendi natus laudantium quaerat quia officiis assumenda dignissimos. Ab
-                        facere fuga temporibus cumque quia.</p>
-                    <img src="assets/img/about.jfif" alt="" class="about__img">
+                    <p class="about__description">Bienvenue sur mon portfolio! Je suis Alexandre, développeur fullstack
+                        (avec un penchant pour le back) passionné par le code et toujours en quête de connaissances
+                        et de perfectionnement.
+
+                    </p>
+                    <!-- <img src="assets/img/about.jfif" alt="" class="about__img"> -->
                 </div>
 
                 <div>
@@ -104,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="about__information">
+                    <!-- <div class="about__information">
                         <h3 class="about__information-title">Experience</h3>
 
                         <div class="about__information-data">
@@ -130,7 +134,7 @@
                                 <span class="about__information-subtitle-small">Online 24/7</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -146,20 +150,24 @@
 
                     <div class="skills__data">
                         <span class="skills__name">HTML/CSS</span>
-                        <span class="skills__number">80%</span>
-                        <span class="skills__bar skills__html"></span>
+                        <img src="./assets/img/icons/html.png" alt="" class="skills__img">
+                        <img src="./assets/img/icons/css.png" alt="" class="skills__img">
+                        <!-- <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__html"></span> -->
                     </div>
 
                     <div class="skills__data">
                         <span class="skills__name">JavaScript</span>
-                        <span class="skills__number">70%</span>
-                        <span class="skills__bar skills__js"></span>
+                        <img src="./assets/img/icons/js.png" alt="" class="skills__img">
+                        <!-- <span class="skills__number">70%</span>
+                        <span class="skills__bar skills__js"></span> -->
                     </div>
 
                     <div class="skills__data">
                         <span class="skills__name">React</span>
-                        <span class="skills__number">50%</span>
-                        <span class="skills__bar skills__react"></span>
+                        <img src="./assets/img/icons/react.png" alt="" class="skills__img">
+                        <!-- <span class="skills__number">50%</span>
+                        <span class="skills__bar skills__react"></span> -->
                     </div>
 
                 </div>
@@ -169,140 +177,28 @@
 
                     <div class="skills__data">
                         <span class="skills__name">Java</span>
-                        <span class="skills__number">80%</span>
-                        <span class="skills__bar skills__java"></span>
+                        <img src="./assets/img/icons/java.png" alt="" class="skills__img">
+                        <!-- <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__java"></span> -->
                     </div>
 
                     <div class="skills__data">
                         <span class="skills__name">Spring</span>
-                        <span class="skills__number">70%</span>
-                        <span class="skills__bar skills__spring"></span>
+                        <img src="./assets/img/icons/spring.svg" alt="" class="skills__img">
+
+                        <!-- <span class="skills__number">70%</span>
+                        <span class="skills__bar skills__spring"></span> -->
                     </div>
 
                     <div class="skills__data">
                         <span class="skills__name">MySQL</span>
-                        <span class="skills__number">50%</span>
-                        <span class="skills__bar skills__mysql"></span>
+                        <img src="./assets/img/icons/my-sql.png" alt="" class="skills__img">
+
+                        <!-- <span class="skills__number">50%</span>
+                        <span class="skills__bar skills__mysql"></span> -->
                     </div>
 
                 </div>
-            </div>
-
-        </section>
-
-        <!--===== FORMATION =====-->
-        <section class="education section">
-            <span class="section-subtitle">Qualification</span>
-            <h2 class="section-title">Ma Formation</h2>
-
-            <div class="education__container bd-grid">
-                <div class="education__content">
-                    <div>
-                        <h3 class="education__year">2020-2021</h3>
-                        <span class="education__university">Simplon Nantes</span>
-                    </div>
-
-                    <div class="education__time">
-                        <span class="education__rounder"></span>
-                        <span class="education__line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="education__race">Titre Professionnel</h3>
-                        <span class="education__specialty">Développeur web, web mobile Java</span>
-                    </div>
-                </div>
-
-                <div class="education__content">
-                    <div>
-                        <h3 class="education__year">2005-2007</h3>
-                        <span class="education__university">Lycée Louise Michel</span>
-                    </div>
-
-                    <div class="education__time">
-                        <span class="education__rounder"></span>
-                        <span class="education__line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="education__race">BTS</h3>
-                        <span class="education__specialty">Info. de gestion</span>
-                    </div>
-                </div>
-
-                <div class="education__content">
-                    <div>
-                        <h3 class="education__year">2002-2005</h3>
-                        <span class="education__university">Lycée André Argouges</span>
-                    </div>
-
-                    <div class="education__time">
-                        <span class="education__rounder"></span>
-                        <span class="education__line"></span>
-                    </div>
-
-                    <div>
-                        <h3 class="education__race">BAC</h3>
-                        <span class="education__specialty">Génie méchanique option microtechniques</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--===== SERVICES =====-->
-        <section class="services section" id="services">
-            <span class="section-subtitle">Ce que je propose</span>
-            <h2 class="section-title">Mes Services</h2>
-
-            <div class="services__container bd-grid">
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Web Design</h3>
-                    <p class="services__description">Les services que j'offre blabla</p>
-                </div>
-
-                <!-- <div class="services__content">
-            <i class="bx bx-pen services__icon"></i>
-            <h3 class="services__title">Graphic Design</h3>
-            <p class="services__description">Les services que j'offre blabla</p>
-        </div> -->
-
-                <div class="services__content">
-                    <i class="bx bx-brush services__icon"></i>
-                    <h3 class="services__title">UI/UX</h3>
-                    <p class="services__description">Les services que j'offre blabla</p>
-                </div>
-
-                <div class="services__content">
-                    <i class="bx bx-server services__icon"></i>
-                    <h3 class="services__title">Dev. Backend</h3>
-                    <p class="services__description">Les services que j'offre blabla</p>
-                </div>
-
-                <div class="services__content">
-                    <i class="bx bx-pencil services__icon"></i>
-                    <h3 class="services__title">Ecriture</h3>
-                    <p class="services__description">Les services que j'offre blabla</p>
-                </div>
-
-                <div class="services__content">
-                    <i class="bx bx-mobile services__icon"></i>
-                    <h3 class="services__title">Interface Mobile</h3>
-                    <p class="services__description">Les services que j'offre blabla</p>
-                </div>
-            </div>
-        </section>
-
-        <!--===== PROJECT IN MIND =====-->
-        <section class="project section">
-            <div class="project__container bd-grid">
-                <div class="project__data">
-                    <h2 class="section-title project__title">Avez-vous un projet en tête?</h2>
-                    <p class="project__description">Si vous avez un projet blabla</p>
-                    <a href="#contact" class="button button__light">Contactez-moi</a>
-                </div>
-
-                <img src="assets/img/projectmind.png" alt="" class="project__img">
             </div>
         </section>
 
@@ -321,13 +217,16 @@
                             <h1 class="popup-header-title">Blog</h1>
                             <img src="./assets/img/blog.jpg" alt="project_img" class="popup_img">
                             <h5 class="popup-header-subtitle">
-                                Plateforme de rédaction d'un blog avec système d'authentification.
-                                Affichage, redaction, modification, suppression d'articles liés à chaque compte
-                                utilisateur.
+                                Plateforme maison de rédaction d'un blog avec système d'authentification. Le serveur
+                                API/Identification est codé en Java/Spring, la partie client avec React JS, la BDDR est
+                                administrée en MySQL sur un serveur Amazon RDS .
+                                Possibilité d'affichage/tri, redaction, modification, suppression d'articles liés à
+                                chaque compte
+                                utilisateur (avec upload/stockage d'images).
                             </h5>
                         </div>
                         <ul class="popup-content-links">
-                            <li>Liens</li>
+                            <!-- <li class="popup-content-links-title">Liens</li> -->
                             <li>
                                 <i class="bx bxl-github"></i>
                                 <a href="https://github.com/ablache-hub/blog_back" target="_blank"
@@ -405,7 +304,7 @@
                         </div>
 
                         <ul class="popup-content-links">
-                            <li>Liens</li>
+                            <!-- <li>Liens</li> -->
                             <li>
                                 <i class="bx bxl-github"></i>
                                 <a href="https://github.com/ablache-hub/Portfolio" target="_blank"
@@ -449,14 +348,15 @@
                     <div class="popup-content">
                         <div class="popup-header">
                             <h1 class="popup-header-title">Pokédex</h1>
-                            <img src="./assets/img/icons/pokedex.jpg" alt="project_img" class="popup_img">
+                            <img src="./assets/img/pokedex.jpg" alt="project_img" class="popup_img">
                             <h5 class="popup-header-subtitle">
-                                Interface d'affichage d'un listing de Pokémons codée en HTML/CSS/JS, les données sont fetchées à partir d'une API dédiée.
+                                Interface d'affichage d'un listing de Pokémons codée en HTML/CSS/JS, les données sont
+                                fetchées à partir d'une API dédiée.
                             </h5>
                         </div>
 
                         <ul class="popup-content-links">
-                            <li>Liens</li>
+                            <!-- <li>Liens</li> -->
                             <li>
                                 <i class="bx bxl-github"></i>
                                 <a href="https://github.com/ablache-hub/pokedex" target="_blank"
@@ -498,9 +398,7 @@
                 </div>
 
                 <div class="works__img">
-                    <img src="assets/img/work1.jpg" alt="">
-
-
+                    <img src="assets/img/blog.jpg" alt="">
                     <div class="works__data">
                         <span class="works__link" id="works-link-1" onclick="displayPopup(this.id)">
                             <i class="bx bx-link-alt"></i>
@@ -510,21 +408,17 @@
                 </div>
 
                 <div class="works__img">
-                    <img src="assets/img/work2.jpg" alt="">
-
+                    <img src="assets/img/portfolio.jpg" alt="">
                     <div class="works__data">
                         <span class="works__link" id="works-link-2" onclick="displayPopup(this.id)">
                             <i class="bx bx-link-alt"></i>
                         </span>
                         <span class="works__title">Portfolio</span>
                     </div>
-
-
                 </div>
 
                 <div class="works__img">
-                    <img src="assets/img/work3.jpg" alt="">
-
+                    <img src="assets/img/pokedex.jpg" alt="">
                     <div class="works__data">
                         <span class="works__link" id="works-link-3" onclick="displayPopup(this.id)">
                             <i class="bx bx-link-alt"></i>
@@ -532,17 +426,125 @@
                         <span class="works__title">Pokédex</span>
                     </div>
                 </div>
-
-                <!-- <div class="works__img">
-            <img src="assets/img/work4.jpg" alt="">
-
-            <div class="works__data">
-                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                <span class="works__title">Work 4</span>
-            </div>
-        </div> -->
             </div>
         </section>
+
+
+        <!--===== FORMATION =====-->
+        <!-- <section class="education section">
+            <span class="section-subtitle">Qualification</span>
+            <h2 class="section-title">Ma Formation</h2>
+
+            <div class="education__container bd-grid">
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2020-2021</h3>
+                        <span class="education__university">Simplon Nantes</span>
+                    </div>
+
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">Titre Professionnel</h3>
+                        <span class="education__specialty">Développeur web, web mobile Java</span>
+                    </div>
+                </div>
+
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2005-2007</h3>
+                        <span class="education__university">Lycée Louise Michel</span>
+                    </div>
+
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">BTS</h3>
+                        <span class="education__specialty">Info. de gestion</span>
+                    </div>
+                </div>
+
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2002-2005</h3>
+                        <span class="education__university">Lycée André Argouges</span>
+                    </div>
+
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">BAC</h3>
+                        <span class="education__specialty">Génie méchanique option microtechniques</span>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!--===== SERVICES =====-->
+        <!-- <section class="services section" id="services">
+            <span class="section-subtitle">Ce que je propose</span>
+            <h2 class="section-title">Mes Services</h2>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Web Design</h3>
+                    <p class="services__description">Les services que j'offre blabla</p>
+                </div> -->
+
+        <!-- <div class="services__content">
+            <i class="bx bx-pen services__icon"></i>
+            <h3 class="services__title">Graphic Design</h3>
+            <p class="services__description">Les services que j'offre blabla</p>
+        </div> -->
+
+        <!-- <div class="services__content">
+                    <i class="bx bx-brush services__icon"></i>
+                    <h3 class="services__title">UI/UX</h3>
+                    <p class="services__description">Les services que j'offre blabla</p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-server services__icon"></i>
+                    <h3 class="services__title">Dev. Backend</h3>
+                    <p class="services__description">Les services que j'offre blabla</p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-pencil services__icon"></i>
+                    <h3 class="services__title">Ecriture</h3>
+                    <p class="services__description">Les services que j'offre blabla</p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-mobile services__icon"></i>
+                    <h3 class="services__title">Interface Mobile</h3>
+                    <p class="services__description">Les services que j'offre blabla</p>
+                </div>
+            </div>
+        </section> -->
+
+        <!--===== PROJECT IN MIND =====-->
+        <!-- <section class="project section">
+            <div class="project__container bd-grid">
+                <div class="project__data">
+                    <h2 class="section-title project__title">Avez-vous un projet en tête?</h2>
+                    <p class="project__description">Si vous avez un projet blabla</p>
+                    <a href="#contact" class="button button__light">Contactez-moi</a>
+                </div>
+
+                <img src="assets/img/projectmind.png" alt="" class="project__img">
+            </div>
+        </section> -->
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
@@ -592,13 +594,6 @@
 
         </section>
     </main>
-
-    <!--===== FOOTER =====-->
-    <div class="nav__toggle__popup" id="popup-toggle-1" onclick="displayPopup(this.id)">
-        <i class="bx bx-menu"></i>
-    </div>
-
-
 
     <!--===== MAIN JS =====-->
     <script src="./assets/js/main.js"></script>

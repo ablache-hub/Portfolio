@@ -96,6 +96,9 @@ img{
   display: block;
 }
 
+.home {
+height: 100vh;
+}
 
 /*===== CLASS CSS ===== */
 .section{
@@ -255,8 +258,16 @@ img{
   background-color: var(--first-color-dark);
 }
 
+.home__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;  
+}
+
 .home__button{
   width: 100%;
+  margin-bottom: 20px;
 }
 
 /*BUTTONS*/
@@ -289,6 +300,7 @@ img{
 
 .about__data{
   text-align: center;
+  align-self: center;
 }
 
 .about__description{
@@ -335,25 +347,30 @@ img{
 
 /* ===== SKILLS =====*/
 .skills__container{
-  row-gap: 2rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  margin-bottom: -20px;
 }
 
 .skills__subtitle{
   font-size: var(--h3-font-size);
   color: var(--first-color-dark);
   margin-bottom: var(--mb-2);
+  margin-left: -50px;
 }
 
 .skills__data{
   position: relative;
   display: flex;
-  justify-content: space-between;
-  margin: 0 var(--mb-2);
-  margin-bottom: var(--mb-4);
+  /* justify-content: space-between; */
+  margin-bottom: var(--mb-3);
 }
 
 .skills__name{
   text-transform: uppercase;
+  width: 150px;
 }
 
 .skills__bar{
@@ -361,6 +378,10 @@ img{
   bottom: -.75rem;
   height: .25rem;
   background-color: var(--first-color);
+}
+
+.skills__img {
+  width: 40px;
 }
 
 .skills__html{
@@ -532,6 +553,14 @@ img{
   border-radius: .5rem;
 }
 
+.works__img > img {
+  height: 250px;
+  width: 500px;
+  object-fit: cover;
+  object-position: left;
+  filter: saturate(0.7);
+}
+
 .works__data{
   position: absolute;
   bottom: -100%;
@@ -654,7 +683,7 @@ img{
 }
 
 .popup-header-subsubtitle {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
  .popup-content {
@@ -668,6 +697,10 @@ img{
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
+ }
+
+ .popup-content-links-title {
+   font-weight: 600;
  }
 
  .techno-icon {
@@ -696,10 +729,12 @@ img{
 
 .popup_img{
 margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
 border-radius: 5%;
 max-width: 500px;
 max-height: 200px;
-margin: auto;
+filter: saturate(0.8);
 }
 
 .popup-techno {
@@ -713,6 +748,11 @@ margin: auto;
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
+.home__buttons {
+  flex-direction: row;
+  max-width: 450px;
+}
+
   .home__button{
     width: initial;
   }
@@ -722,12 +762,16 @@ margin: auto;
   }
 
   .about__container, 
-  .skills__container, 
   .services__container,
   .works__container,
   .contact__container,
   .contact__input{
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .skills__container {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .about__data{
