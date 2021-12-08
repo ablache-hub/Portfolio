@@ -37,7 +37,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
                     <li class="nav__item"><a href="#works" class="nav__link">Projets</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <!-- <li class="nav__item"><a href="#services" class="nav__link">Services</a></li> -->
                     <li class="nav__item"><a href="#contact" class="nav__link">Contactez-moi</a></li>
                 </ul>
             </div>
@@ -218,8 +218,8 @@
                             <img src="./assets/img/blog.jpg" alt="project_img" class="popup_img">
                             <h5 class="popup-header-subtitle">
                                 Plateforme maison de rédaction d'un blog avec système d'authentification. Le serveur
-                                API/Identification est codé en Java/Spring, la partie client avec React JS, la BDDR est
-                                administrée en MySQL sur un serveur Amazon RDS .
+                                API/Identification est codé en Java/Spring, le client avec React JS, la BDDR étant
+                                administrée grâce à MySQL sur un serveur Amazon RDS .
                                 Possibilité d'affichage/tri, redaction, modification, suppression d'articles liés à
                                 chaque compte
                                 utilisateur (avec upload/stockage d'images).
@@ -227,7 +227,7 @@
                         </div>
                         <ul class="popup-content-links">
                             <!-- <li class="popup-content-links-title">Liens</li> -->
-                            <li>
+                            <li class="popup-content-links-server">
                                 <i class="bx bxl-github"></i>
                                 <a href="https://github.com/ablache-hub/blog_back" target="_blank"
                                     rel="noopener noreferrer">Back</a>
@@ -235,10 +235,13 @@
                                 <a href="https://github.com/ablache-hub/Blog_front" target="_blank"
                                     rel="noopener noreferrer">Front</a>
                             </li>
-                            <li>
-                                <i class="fa fa-globe"></i>
-                                <a href="https://blog-front-al.herokuapp.com/" target="_blank"
-                                    rel="noopener noreferrer">Démo Live</a>
+                            <li class="link-heroku">
+                                <div>
+                                    <i class="fa fa-globe"></i>
+                                    <a href="https://blog-front-al.herokuapp.com/" target="_blank"
+                                        rel="noopener noreferrer">Démo Live</a>
+                                </div>
+                                <span class="link-loading">(patientez quelques instants pour l'allumage des serveurs)</span>
                             </li>
                         </ul>
                         <h4 class="popup-header-subsubtitle">Stack technique</h2>
@@ -269,7 +272,7 @@
                                     <div class="popup-techno-column">
                                         <ul>
                                             <li>- Architecture MVC</li>
-                                            <li>- API RESTfull</li>
+                                            <li>- API REST</li>
                                             <li>- Security avec JWT </li>
                                             <li>- BDD SQL Distante </li>
                                             <li>- Schema rel. SQL </li>
@@ -298,7 +301,7 @@
                             <h1 class="popup-header-title">Portfolio</h1>
                             <img src="./assets/img/portfolio.jpg" alt="project_img" class="popup_img">
                             <h5 class="popup-header-subtitle">
-                                Le portfolio que vous êtes en train de consulter sous forme de site web statique
+                                Le portfolio que vous êtes en train de consulter sous forme d'un site web statique
                                 responsive, en HTML/CSS pur avec un soupçon de JS.
                             </h5>
                         </div>
@@ -397,6 +400,55 @@
                     </div>
                 </div>
 
+                <div class="popup-wrapper" id="popup-wrapper-4">
+                    <div class="nav_toggle_close popup_toggle_close" id="popup-close-4" onclick="displayPopup(this.id)">
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <div class="popup-content">
+                        <div class="popup-header">
+                            <h1 class="popup-header-title">Module d'Authentification</h1>
+                            <img src="./assets/img/login_module.jpg" alt="project_img" class="popup_img">
+                            <h5 class="popup-header-subtitle">
+                                Un module serveur type API REST codé en Java avec le framework Spring intégrant
+                                Security. Permet la gestion de comptes utilisateurs avec authentification par JWT,
+                                adaptable et intégrable à tout projet.
+                            </h5>
+                        </div>
+
+                        <ul class="popup-content-links">
+                            <!-- <li>Liens</li> -->
+                            <li>
+                                <i class="bx bxl-github"></i>
+                                <a href="https://github.com/ablache-hub/login_module" target="_blank"
+                                    rel="noopener noreferrer">Repo. GitHub</a>
+                            </li>
+                        </ul>
+
+                        <h4 class="popup-header-subsubtitle">Stack technique</h2>
+                            <ul class="popup-content-techno">
+                                <li class="popup-content-techno-list">
+                                    <img src="./assets/img/icons/java.png" alt="" class="techno-icon">
+                                    <span>Java</span>
+                                </li>
+                                <li class="popup-content-techno-list">
+                                    <img src="./assets/img/icons/spring.svg" alt="" class="techno-icon">
+                                    <span>Spring</span>
+                                </li>
+                            </ul>
+
+                            <h4 class="popup-header-subsubtitle">Implémentations</h2>
+                                <div class="popup-techno">
+                                    <div class="popup-techno-column">
+                                        <ul>
+                                            <li>- API REST</li>
+                                            <li>- Architecture MVC</li>
+                                            <li>- JWT</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+
                 <div class="works__img">
                     <img src="assets/img/blog.jpg" alt="">
                     <div class="works__data">
@@ -404,6 +456,16 @@
                             <i class="bx bx-link-alt"></i>
                         </span>
                         <span class="works__title">Blog</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/login_module.jpg" alt="">
+                    <div class="works__data">
+                        <span class="works__link" id="works-link-4" onclick="displayPopup(this.id)">
+                            <i class="bx bx-link-alt"></i>
+                        </span>
+                        <span class="works__title">Module d'Authentification</span>
                     </div>
                 </div>
 
@@ -531,7 +593,7 @@
                     <p class="services__description">Les services que j'offre blabla</p>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!--===== PROJECT IN MIND =====-->
         <!-- <section class="project section">

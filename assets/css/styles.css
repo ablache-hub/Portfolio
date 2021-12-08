@@ -370,6 +370,7 @@ height: 100vh;
 
 .skills__name{
   text-transform: uppercase;
+  align-self: center;
   width: 150px;
 }
 
@@ -558,6 +559,8 @@ height: 100vh;
   width: 500px;
   object-fit: cover;
   object-position: left;
+  border: 2px solid #efefef;
+  border-radius: 3%;
   filter: saturate(0.7);
 }
 
@@ -569,6 +572,7 @@ height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   background: rgba(204, 75, 44, .7);
   transition: .3s;
@@ -701,6 +705,19 @@ height: 100vh;
 
  .popup-content-links-title {
    font-weight: 600;
+ }
+
+ .popup-content-links-server {
+  align-self: center;
+ }
+
+ .link-heroku {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .link-loading {
+   font-size: 10px;
  }
 
  .techno-icon {
