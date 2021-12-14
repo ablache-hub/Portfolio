@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- ===== BOX ICONS ===== -->
-    <script src="https://use.fontawesome.com/23ffcc7965.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Portfolio d'Alexandre Blache, développeur fullstack</title>
     <meta name="descirption" content="Bienvenue sur mon portfolio! Je suis Alexandre, développeur fullstack
@@ -107,6 +107,11 @@
                             <i class="bx bx-envelope about__information-icon"></i>
                             <span>alexandreblache.pro@gmail.com</span>
                         </div>
+
+                        <div class="about__information-data">
+                            <i class="fas fa-map-marker-alt about__information-icon-gps"></i>
+                            <span>Nantes</span>
+                        </div>
                     </div>
 
                     <!-- <div class="about__information">
@@ -192,8 +197,9 @@
                     </div>
 
                     <div class="skills__data">
-                        <span class="skills__name">MySQL</span>
+                        <span class="skills__name">SQL</span>
                         <img src="./assets/img/icons/my-sql.png" alt="Icone MySQL" class="skills__img">
+                        <img src="./assets/img/icons/postgre.png" alt="Icone postgreSQL" class="skills__img_postgre">
 
                         <!-- <span class="skills__number">50%</span>
                         <span class="skills__bar skills__mysql"></span> -->
@@ -220,7 +226,7 @@
                             <h5 class="popup-header-subtitle">
                                 Plateforme maison de rédaction d'un blog avec système d'authentification. Le serveur
                                 API/Identification est codé en Java/Spring, le client avec React JS, la BDDR étant
-                                administrée grâce à MySQL sur un serveur Amazon RDS .
+                                administrée grâce à PostgreSQL sur un serveur ElephantSQL.
                                 Possibilité d'affichage/tri, redaction, modification, suppression d'articles liés à
                                 chaque compte
                                 utilisateur (avec upload/stockage d'images).
@@ -269,8 +275,9 @@
                                     <span>React</span>
                                 </li>
                                 <li class="popup-content-techno-list">
-                                    <img src="./assets/img/icons/my-sql.png" alt="Icone MySQL" class="techno-icon">
-                                    <span>MySQL</span>
+                                    <img src="./assets/img/icons/postgre.png" alt="Icone postgreSQL"
+                                        class="skills__img_popup">
+                                    <span>PostgreSQL</span>
                                 </li>
                             </ul>
 

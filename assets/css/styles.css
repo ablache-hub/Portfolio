@@ -330,10 +330,14 @@ height: 100vh;
   margin-bottom: var(--mb-3);
 }
 
-.about__information-icon{
+.about__information-icon, .about__information-icon-gps{
   font-size: 1.5rem;
   color: var(--first-color);
   margin-right: var(--mb-4);
+}
+
+.about__information-icon-gps {
+  padding-left: 0.2rem;
 }
 
 .about__information-subtitle{
@@ -381,8 +385,16 @@ height: 100vh;
   background-color: var(--first-color);
 }
 
-.skills__img {
+.skills__img, .skills__img_postgre {
   width: 40px;
+}
+
+.skills__img_popup {
+  width: 25px;
+}
+
+.skills__img_postgre {
+  margin-left: 10px;
 }
 
 .skills__html{
@@ -796,7 +808,7 @@ filter: saturate(0.8);
   }
 
   .about__description{
-    margin-bottom: var(--mb-5);
+    margin-bottom: -10px;
   }
 
   .about__img{
