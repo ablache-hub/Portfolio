@@ -96,6 +96,10 @@ img{
   display: block;
 }
 
+iframe{
+  margin-top: 10px;
+}
+
 .home {
 height: 100vh;
 }
